@@ -15,6 +15,7 @@ At runtime, the server:
 ## Documentation
 
 - [Tool catalog and invocation model](./docs/tools.md)
+- [Tools showcase](./docs/showcase.md)
 - [Run the server (local or installed)](./docs/running.md)
 
 ## Reference
