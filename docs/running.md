@@ -7,7 +7,7 @@
 ## Prerequisites
 
 - Node.js `>=18.0.0`
-- A Layer API key (sent as `Layer-Api-Key`)
+- Layer API access (the server sends requests with `Layer-Api-Key`)
 
 ## Implementation
 
@@ -49,12 +49,14 @@
 
 ## Configuration
 
-### Environment and API key
+### Environment and API key constants
 
 The server constructs a `LayerAPI` client using constants from `src/vars.ts`:
 
 - `environment`: `production`
 - `layerApiKey`: a literal string value
+
+No CLI flags are currently defined for auth overrides (`authFlaggableDetails` is an empty array in `src/vars.ts`).
 
 ## Troubleshooting
 
