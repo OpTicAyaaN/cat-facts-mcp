@@ -56,12 +56,12 @@ The server returns:
 
 The server forwards the call as follows:
 
-- `search_workflows_and_docs`  `POST /chat/search`
-- Any other tool  `POST /mcp/tools/call`
+- `search_workflows_and_docs` -> `POST /chat/search`
+- Any other tool -> `POST /mcp/tools/call`
 
 ## Best Practices
 
-- Execute `search_workflows_and_docs` first when a request requires discovery of relevant workflows or documentation. The tool description is provided by the server and can be used as the primary guidance.
+- `search_workflows_and_docs` serves as the discovery entrypoint when a request requires relevant workflows or documentation. The tool description returned in `tools/list` defines the intended usage.
 
 ## Troubleshooting
 
